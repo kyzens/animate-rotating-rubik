@@ -21,8 +21,7 @@ body {
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
-}
+    height: 100vh;}
 
 #box-area1 {
     transform-style: preserve-3d;
@@ -139,4 +138,15 @@ body {
 
 .bg-bottom {
     background-color: #7950f2;
+}
+
+@media (max-width: 1280px) { 
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+        margin: 100px 0;
+        grid-gap: 100px;
+    }
 }
